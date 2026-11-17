@@ -140,7 +140,7 @@ http://127.0.0.1:8000/api
 
 This API is designed to work with the following Vue 3 application:
 
-[Sales Management System – Frontend](YOUR_FRONTEND_REPOSITORY_URL)
+[Sales Management System – Frontend](https://github.com/DiegoMS-dev/gestion-ventas-web)
 
 ## 👨‍💻 Author
 
