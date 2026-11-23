@@ -7,91 +7,91 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# ⚙️ Sales Management System – Backend API
+# ⚙️ Sistema de Gestión de Ventas – Backend API
 
-A RESTful API developed with **Laravel** and **PHP**, designed to handle the business logic, data management and database operations of a sales and inventory management system.
+API REST desarrollada con **Laravel** y **PHP**, diseñada para gestionar la lógica de negocio, el procesamiento de datos y las operaciones con la base de datos de un sistema de gestión de ventas e inventario.
 
-This backend serves as the data layer for a Vue 3 Single Page Application (SPA), providing endpoints for communication between the frontend and the database.
+Este backend funciona como la capa de datos de una aplicación frontend desarrollada con Vue 3 bajo la arquitectura **SPA (Single Page Application)**, proporcionando endpoints para la comunicación entre la interfaz de usuario y la base de datos.
 
-## ✨ Features
+## ✨ Características
 
-- **Products:** Product registration, editing, deletion and retrieval.
-- **Categories:** Category management and product relationships.
-- **Clients:** Customer information management.
-- **Suppliers:** Supplier management.
-- **Purchases:** Purchase operations.
-- **Inventory:** Stock management and control.
-- **Sales:** Sales operations.
-- **Reports:** Data retrieval for business analysis.
-- **Dashboard:** Data endpoints for displaying business metrics and activity.
+- **Productos:** Registro, edición, eliminación y consulta de productos.
+- **Categorías:** Administración de categorías y relaciones con productos.
+- **Clientes:** Gestión de información de clientes.
+- **Proveedores:** Administración de proveedores.
+- **Compras:** Gestión de operaciones de compra.
+- **Inventario:** Control y administración de existencias.
+- **Ventas:** Gestión de operaciones de venta.
+- **Reportes:** Obtención de información para el análisis del negocio.
+- **Dashboard:** Endpoints para proporcionar indicadores y datos de la actividad del negocio.
 
-## 🚀 Technologies
+## 🚀 Tecnologías utilizadas
 
-| Technology | Purpose |
+| Tecnología | Descripción |
 |---|---|
-| PHP | Main programming language |
-| Laravel 13 | Backend framework |
-| MariaDB / MySQL | Relational database |
-| Eloquent ORM | Database interaction and relationships |
-| Laravel Migrations | Database structure management |
-| REST API | Communication with the frontend |
-| Laravel Sanctum | API authentication support |
+| PHP | Lenguaje de programación principal |
+| Laravel 13 | Framework de desarrollo backend |
+| MariaDB / MySQL | Sistema de gestión de bases de datos relacional |
+| Eloquent ORM | Gestión de consultas y relaciones con la base de datos |
+| Laravel Migrations | Administración de la estructura de la base de datos |
+| API REST | Comunicación entre el frontend y el backend |
+| Laravel Sanctum | Soporte para autenticación mediante API |
 
-## 🏗️ Architecture
+## 🏗️ Arquitectura
 
-The backend follows a RESTful API architecture.
+El backend utiliza una arquitectura basada en **API REST**, encargada de procesar las solicitudes del frontend y gestionar las operaciones del sistema.
 
-It is responsible for:
+Sus principales responsabilidades son:
 
-- Processing HTTP requests.
-- Validating incoming data.
-- Executing business logic.
-- Managing database operations.
-- Handling relationships between entities.
-- Returning JSON responses to the frontend.
+- Procesamiento de solicitudes HTTP.
+- Validación de los datos recibidos.
+- Ejecución de la lógica de negocio.
+- Gestión de operaciones con la base de datos.
+- Administración de relaciones entre entidades.
+- Envío de respuestas en formato JSON al frontend.
 
-The API is consumed by the Vue 3 frontend, which follows the Single Page Application (SPA) architecture.
+La API es consumida por una aplicación frontend desarrollada con Vue 3, que utiliza la arquitectura Single Page Application (SPA).
 
-## 📋 Requirements
+## 📋 Requisitos previos
 
-- PHP 8.3 or higher.
+- PHP 8.3 o superior.
 - Composer.
-- MariaDB or MySQL.
+- MariaDB o MySQL.
 - Git.
-- PHP extensions required by Laravel.
+- Extensiones de PHP requeridas por Laravel.
 
-## ⚙️ Installation
+## ⚙️ Instalación y ejecución
 
-**1. Clone the repository**
+**1. Clonar el repositorio**
 
 ```bash
 git clone https://github.com/DiegoMS-dev/gestion-ventas-api
 cd gestion-ventas-api
 ```
 
-**2. Install dependencies**
+**2. Instalar las dependencias**
 
 ```bash
 composer install
 ```
 
-**3. Configure environment variables**
+**3. Configurar las variables de entorno**
 
-Copy the example environment file:
+Copiar el archivo de configuración de ejemplo:
 
 ```bash
 cp .env.example .env
 ```
 
-Generate the application key:
+Generar la clave de la aplicación:
 
 ```bash
 php artisan key:generate
 ```
 
-**4. Configure the database**
+**4. Configurar la base de datos**
 
-Edit your `.env` file with your database credentials:
+Editar el archivo `.env` con las credenciales de la base de datos:
 
 ```env
 DB_CONNECTION=mysql
@@ -102,35 +102,35 @@ DB_USERNAME=root
 DB_PASSWORD=your_password
 ```
 
-Create the database before running the migrations.
+Crear la base de datos antes de ejecutar las migraciones.
 
-**5. Configure the application timezone**
+**5. Configurar la zona horaria**
 
-In `config/app.php`:
+En `config/app.php`, configurar la zona horaria correspondiente:
 
 ```php
 'timezone' => 'America/Lima',
 ```
 
-**6. Run database migrations**
+**6. Ejecutar las migraciones**
 
 ```bash
 php artisan migrate
 ```
 
-**7. Start the development server**
+**7. Iniciar el servidor de desarrollo**
 
 ```bash
 php artisan serve
 ```
 
-The API will be available at:
+La API estará disponible en:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-API endpoints are available under:
+Los endpoints de la API estarán disponibles bajo la ruta:
 
 ```text
 http://127.0.0.1:8000/api
@@ -138,11 +138,11 @@ http://127.0.0.1:8000/api
 
 ## 🔗 Frontend
 
-This API is designed to work with the following Vue 3 application:
+Esta API está diseñada para trabajar junto con la siguiente aplicación desarrollada con Vue 3:
 
-[Sales Management System – Frontend](https://github.com/DiegoMS-dev/gestion-ventas-web)
+[Ver repositorio del Frontend – Sistema de Gestión de Ventas](https://github.com/DiegoMS-dev/gestion-ventas-web)
 
-## 👨‍💻 Author
+## 👨‍💻 Autor
 
 **Diego Mendieta Saucedo**
 
@@ -150,4 +150,4 @@ GitHub: [@DiegoMS-dev](https://github.com/DiegoMS-dev)
 
 ---
 
-Developed as a software development project using PHP, Laravel and relational database technologies.
+Desarrollado como proyecto de desarrollo de software utilizando PHP, Laravel y tecnologías de bases de datos relacionales.
